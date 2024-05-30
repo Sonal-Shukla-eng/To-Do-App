@@ -1,0 +1,42 @@
+
+  <div class="main-div">
+    <h2>To Do App</h2>
+    <div class="second-div">
+      <input type="text" placeholder="Enter Today's Task" [(ngModel)]="newTodoTitle">
+      <button (click)="addTodo()">Add</button>
+    </div>
+
+    <table class="task-div">
+      <thead>
+
+        <tr>
+          <th>
+            Task
+          </th>
+          <th>
+            Status
+          </th>
+          <th>
+            Update
+          </th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr *ngFor ="let todo of todos">
+           <td>{{todo.title}}</td>
+           <td>
+            <input type="checkbox" [checked]="todo.completed" (change)="toggleCompletion()"/>
+            <span [ngClass]="{'completed':todo.completed}">{{todo.completed? 'completed' : 'pending'}}</span>
+           </td>
+            <td>
+              <button (click)="deleteTodo()" style="background-color: black; font-size: 10px; padding:10px; margin: 30px;">Delete</button>
+           
+            </td> 
+          
+        </tr>
+    </tbody>
+    </table>
+    
+  </div>
+  

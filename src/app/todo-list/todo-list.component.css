@@ -1,0 +1,71 @@
+.main-div{
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 350px;
+    padding: 20px;
+    margin: auto;
+}
+
+.second-div{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+h2{
+    text-align: center;
+}
+
+input{
+    border-radius: 10px;
+    margin: 4px;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    background-color: #708294;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.task-div{
+border: 1px black solid;
+border-radius: 10px;
+padding: 10px;
+margin: 20px;
+}
+
+deleteButton{
+    background-color: black;
+    padding: 10px;
+    font-size: 12px;
+}
+
+table {
+    width: 300px;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  /* .completed {
+    text-decoration: line-through;
+  } */
+  
